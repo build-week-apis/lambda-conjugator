@@ -1,5 +1,10 @@
 # conjugator-backend
 
+Backend server for MyConjugator.
+
+Populates database with verb conjugations from 
+https://github.com/ghidinelli/fred-jehle-spanish-verbs
+
 ## Lambda Conjugator API Link
 ```js
 https://lambda-conjugator.herokuapp.com/
@@ -45,11 +50,7 @@ POST /api/login
 
 ### Verbs
 ```js
-GET /api/
-
-Backend server for MyConjugator.
-
-Populates database with verb conjugations from 
-https://github.com/ghidinelli/fred-jehle-spanish-verbs
+GET /api/conjugator
+```
 
 Basic functionality gathers data and creates authorization protected end points through username password system. Authorization varified via use of tokens. If user is not valid, they will not have access to pulled data.
